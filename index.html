@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Music Player -->
+        <div class="player">
+
+            <div class="top">
+                <button id="backBtn">‹</button>
+                <span>Music Player</span>
+                <button>♡</button>
+            </div>
+
+            <!-- Album Image -->
+            <div class="album">
+                <img
+                    src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=500&q=80"
+                    alt="Album Cover"
+                >
+            </div>
+
+            <!-- Song Information -->
+            <div class="song-info">
+                <h2 id="songTitle">Despacito</h2>
+                <p id="artist">Luis Fonsi</p>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-area">
+
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+
+                <div class="time">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">3:48</span>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+
+                <button id="previous">↶</button>
+
+                <button id="play" class="play-btn">
+                    ▶
+                </button>
+
+                <button id="next">↷</button>
+
+            </div>
+
+            <!-- Volume -->
+            <div class="volume">
+                <span>−</span>
+                <input type="range" min="0" max="100" value="70">
+                <span>+</span>
+            </div>
+
+        </div>
+
+
+        <!-- Right Text -->
+        <div class="description">
+
+            <h1>
+                <span>music</span> player
+            </h1>
+
+            <p>html css &amp; javascript</p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
